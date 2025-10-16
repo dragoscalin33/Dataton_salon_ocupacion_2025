@@ -16,7 +16,7 @@ El análisis del consumo de agua demuestra que la gestión del riesgo hídrico d
 | **Ineficiencia de Red** | Código: `SALYNFPFMKJN5D2V` | 55.920 alertas | Riesgo por Fallo Sistémico en la infraestructura (ODS 6) | 5% anomalías detectadas |
 | **Anomalías Críticas** | Distritos 2, 10, 3 | 48.049 casos anómalos | Consumo irregular requiere intervención inmediata | Isolation Forest |
 
-### 🎯 Nuevo Hallazgo ML: Capacidad Predictiva Validada
+###  Nuevo Hallazgo ML: Capacidad Predictiva Validada
 - **Precisión del modelo**: 97.91% (R² = 0.9791)
 - **Error medio**: ±5,150 L/día (0.5% del consumo promedio)
 - **Confianza**: Alta para planificación a 7-30 días
@@ -33,7 +33,7 @@ El análisis del consumo de agua demuestra que la gestión del riesgo hídrico d
 - **Focos Críticos (3 y 4)**: El Distrito 4 es el más intensivo (L/día/contador)
 - **Acción**: Auditoría obligatoria en distritos 3 y 4 para reducir ineficiencia unitaria industrial
 
-#### 🤖 Validación con Machine Learning:
+####  Validación con Machine Learning:
 El modelo de **clustering K-Means** identifica 3 perfiles de consumo:
 
 1. **Cluster "Alto Consumo"** (Distritos 3, 4)
@@ -61,7 +61,7 @@ El modelo de **clustering K-Means** identifica 3 perfiles de consumo:
 - **Foco Crítico**: Distrito 1 registra máxima intensidad (L/día/Contador)
 - **Acción**: Vigilancia prioritaria de uso no esencial al inicio de Primavera
 
-#### 🤖 Predicción Estacional con ML:
+####  Predicción Estacional con ML:
 El modelo **Random Forest** identifica las variables más influyentes:
 
 | Feature | Importancia | Interpretación |
@@ -83,7 +83,7 @@ El modelo **Random Forest** identifica las variables más influyentes:
 - **Pico Anómalo**: Máximo consumo en Primavera, impulsado por consumo Doméstico
 - **Implicación**: Gestión de demanda debe activarse en Primavera (no esperar al verano)
 
-#### 🤖 Patrón Temporal Detectado por ML:
+####  Patrón Temporal Detectado por ML:
 - **Meses críticos de fugas**: Enero (invierno), Agosto (verano), Febrero
 - **Correlación**: Los picos de fugas preceden a los picos de consumo estacional
 - **Ventana de acción**: 30 días antes del pico estacional
@@ -98,7 +98,7 @@ El modelo **Random Forest** identifica las variables más influyentes:
 - **Pico Operativo**: Martes a Jueves (sectores Industrial y Comercial)
 - **Implicación**: Tarifas dinámicas en días pico para aplanar demanda
 
-#### 🤖 Optimización con ML:
+####  Optimización con ML:
 El modelo detecta que:
 - Los **fines de semana** presentan 15% menos consumo industrial
 - Las **anomalías** son 2.3x más frecuentes en días laborables pico
@@ -114,7 +114,7 @@ El modelo detecta que:
 - **Código dominante**: `SALYNFPFMKJN5D2V` con 55.920 casos
 - **Implicación ODS 6**: Mayor fuente de pérdida directa y fallo sistémico
 
-#### 🤖 Detección Avanzada con Isolation Forest:
+####  Detección Avanzada con Isolation Forest:
 - **Anomalías totales detectadas**: 48,049 registros (5% del dataset)
 - **Distritos prioritarios**: 2, 10, 3 (orden descendente)
 - **Patrón horario**: Picos entre 2-5 AM (presión nocturna)
@@ -132,17 +132,17 @@ El modelo detecta que:
 
 ### Marco de Implementación
 
-#### 1️⃣ **Capa de Predicción (Random Forest)**
+#### 1 **Capa de Predicción (Random Forest)**
 - Horizonte: 1-30 días
 - Actualización: Diaria (reentrenamiento semanal)
 - Uso: Planificación de recursos y capacidad
 
-#### 2️⃣ **Capa de Detección (Isolation Forest)**
+#### 2 **Capa de Detección (Isolation Forest)**
 - Monitoreo: Tiempo real
 - Umbral: 5% de anomalías esperadas
 - Uso: Alertas automáticas a equipos de campo
 
-#### 3️⃣ **Capa de Segmentación (K-Means)**
+#### 3 **Capa de Segmentación (K-Means)**
 - Actualización: Trimestral
 - Uso: Diseño de políticas diferenciadas por cluster
 
@@ -243,22 +243,22 @@ El modelo detecta que:
 ### Roadmap de Implementación
 
 #### **Fase 1: Fundamentos (Mes 1-2)**
-- ✅ Modelos ML entrenados y validados
-- ⏳ Despliegue en servidor de producción
-- ⏳ Integración con base de datos en tiempo real
-- ⏳ Capacitación equipos técnicos
+-  Modelos ML entrenados y validados
+-  Despliegue en servidor de producción
+-  Integración con base de datos en tiempo real
+-  Capacitación equipos técnicos
 
 #### **Fase 2: Operación Piloto (Mes 3-6)**
-- ⏳ Sistema de alertas en Distritos 2, 3, 4
-- ⏳ Dashboard para gerencia
-- ⏳ Validación con datos de campo
-- ⏳ Ajustes y optimización
+-  Sistema de alertas en Distritos 2, 3, 4
+-  Dashboard para gerencia
+-  Validación con datos de campo
+-  Ajustes y optimización
 
 #### **Fase 3: Escalamiento (Mes 7-12)**
-- ⏳ Extensión a toda la ciudad
-- ⏳ Integración con sistemas municipales
-- ⏳ API pública para desarrolladores
-- ⏳ Reportes automáticos ODS 6 y 13
+-  Extensión a toda la ciudad
+-  Integración con sistemas municipales
+-  API pública para desarrolladores
+-  Reportes automáticos ODS 6 y 13
 
 ---
 
